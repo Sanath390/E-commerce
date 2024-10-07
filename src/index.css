@@ -4,3 +4,8 @@
   box-sizing: border-box;
   font-family: 'Roboto';
 }
+body, html {
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(0.3turn, #73355C,#AC3028,#B78838,#254828,#4B8316)
+}

@@ -9,12 +9,7 @@ function App() {
     <>
     
     <Box
-      sx={{
-        mt:0,
-        background: linearGradient,
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-      }}
+      
     >
       <Login/>
     </Box>
