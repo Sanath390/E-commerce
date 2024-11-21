@@ -1,20 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import Login from './main/components/organisms/login';
-import { Box } from '@mui/material';
+import Login from './main/components/organisms/Login';
+import SignUp from './main/components/organisms/SignUp';
+import AuthProvider from './main/components/molecules/AuthProvider';
+import AppRoutes from './main/components/organisms/Routes';
+import ErrorBoundary from './main/components/organisms/ErrorBoundary';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
-  let linearGradient = 'linear-gradient(0.3turn, #73355C,#AC3028,#B78838,#254828,#4B8316)';
+
   return (
-    <>
-    
-    <Box
-      
-    >
-      <Login/>
-    </Box>
-    
-    </>
+    <BrowserRouter>
+      <ErrorBoundary>
+        <AppRoutes />
+      </ErrorBoundary>
+    </BrowserRouter>
   )
 }
 
